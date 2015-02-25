@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        var success = function() { console.log("Success: NFC data sent to peer"); };
+        var success = function() { alert("Success: NFC data sent to peer"); };
         var failure = function(reason) { alert("Sharing failed " + reason); };
 
         nfc.share([ ndef.uriRecord("http://cordova.io") ], success, failure);
