@@ -9,4 +9,8 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <platform name="android">
+        <preference name="android-targetSdkVersion" value="22" />
+    </platform>
+    <plugin name="phonegap-nfc" spec="~0.6.6" />
 </widget>
